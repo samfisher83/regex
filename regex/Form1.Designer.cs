@@ -33,8 +33,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            //this.inputText = new System.Windows.Forms.TextBox();
-            this.inputText = new MyTextBox();
+            this.inputText = new WindowsFormsApplication1.MyTextBox();
             this.inputSeach = new System.Windows.Forms.TextBox();
             this.outputText = new System.Windows.Forms.TextBox();
             this.outputString = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -63,25 +63,28 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(817, 430);
-            this.splitContainer1.SplitterDistance = 35;
+            this.splitContainer1.Size = new System.Drawing.Size(1089, 529);
+            this.splitContainer1.SplitterDistance = 43;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(84, 8);
+            this.checkBox1.Location = new System.Drawing.Point(112, 10);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 17);
+            this.checkBox1.Size = new System.Drawing.Size(111, 21);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Line Number";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 4);
+            this.button1.Location = new System.Drawing.Point(4, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -91,6 +94,7 @@
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -102,63 +106,69 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.outputText);
             this.splitContainer2.Panel2.Controls.Add(this.outputString);
-            this.splitContainer2.Size = new System.Drawing.Size(817, 391);
-            this.splitContainer2.SplitterDistance = 411;
+            this.splitContainer2.Size = new System.Drawing.Size(1089, 481);
+            this.splitContainer2.SplitterDistance = 547;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // inputText
             // 
-            this.inputText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputText.Location = new System.Drawing.Point(3, 29);
+            this.inputText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputText.Location = new System.Drawing.Point(4, 36);
+            this.inputText.Margin = new System.Windows.Forms.Padding(0);
             this.inputText.MaxLength = 10000000;
             this.inputText.Multiline = true;
             this.inputText.Name = "inputText";
             this.inputText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.inputText.Size = new System.Drawing.Size(395, 350);
+            this.inputText.Size = new System.Drawing.Size(539, 441);
             this.inputText.TabIndex = 1;
             // 
             // inputSeach
             // 
-            this.inputSeach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputSeach.Location = new System.Drawing.Point(3, 3);
+            this.inputSeach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputSeach.Location = new System.Drawing.Point(4, 4);
+            this.inputSeach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inputSeach.Name = "inputSeach";
-            this.inputSeach.Size = new System.Drawing.Size(395, 20);
+            this.inputSeach.Size = new System.Drawing.Size(524, 22);
             this.inputSeach.TabIndex = 0;
             // 
             // outputText
             // 
-            this.outputText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.outputText.Location = new System.Drawing.Point(3, 29);
+            this.outputText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.outputText.Location = new System.Drawing.Point(4, 36);
+            this.outputText.Margin = new System.Windows.Forms.Padding(0);
             this.outputText.MaxLength = 10000000;
             this.outputText.Multiline = true;
             this.outputText.Name = "outputText";
             this.outputText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.outputText.Size = new System.Drawing.Size(387, 350);
+            this.outputText.Size = new System.Drawing.Size(516, 430);
             this.outputText.TabIndex = 1;
             // 
             // outputString
             // 
-            this.outputString.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.outputString.Location = new System.Drawing.Point(3, 3);
+            this.outputString.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.outputString.Location = new System.Drawing.Point(4, 4);
+            this.outputString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.outputString.Name = "outputString";
-            this.outputString.Size = new System.Drawing.Size(387, 20);
+            this.outputString.Size = new System.Drawing.Size(516, 22);
             this.outputString.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 430);
+            this.ClientSize = new System.Drawing.Size(1089, 529);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Regex";
             this.splitContainer1.Panel1.ResumeLayout(false);
